@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FITTRACK">
+<meta name="theme-color" content="#050b17"><meta name="format-detection" content="telephone=no">
+<title>FITTRACK</title>
+<link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><b>FIT<i>TRACK</i></b><span id="lvl">LV 1</span></header>
+<main id="view"></main><div id="toast"></div><div id="pop"></div>
+<div id="dlg" hidden><div class="box"><p id="dlgMsg"></p><div class="row"><button data-click="dlg" data-args="0">Annuler</button><button class="go" data-click="dlg" data-args="1">Confirmer</button></div></div></div>
+<nav><button id="t_dash" data-click="go" data-args="'dash'"><span>◉</span>Dashboard</button><button id="t_sport" data-click="go" data-args="'sport'"><span>🏋</span>Sport</button><button id="t_nutri" data-click="go" data-args="'nutri'"><span>🍽</span>Nutrition</button><button id="t_prog" data-click="go" data-args="'prog'"><span>▲</span>Progression</button><button id="t_set" data-click="go" data-args="'set'"><span>⚙</span>Profil</button></nav>
+<script src="js/calculations.js"></script>
+<script src="js/database.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pwa.js"></script>
+</body></html>
